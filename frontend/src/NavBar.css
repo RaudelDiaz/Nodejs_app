@@ -1,0 +1,46 @@
+/* NavBar.css */
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background color */
+    padding: 1em; /* Padding for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for alignment */
+}
+
+.nav-list li {
+    margin-left: 20px; /* Space between items */
+}
+
+.nav-list a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 16px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    border-radius: 4px; /* Slight rounding of corners */
+}
+
+.nav-list button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for button */
+}
+
+.nav-list button:hover {
+    background-color: #c62828; /* Darker red */
+}

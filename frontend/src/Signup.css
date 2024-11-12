@@ -1,0 +1,111 @@
+/* Signup.css */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    position: relative; /* Relative positioning for overlay effect */
+}
+
+.signup-form {
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background for the form */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Set a fixed width */
+    animation: scaleIn 0.5s ease-in-out; /* Use the new animation */
+    color: black; /* Change text color for readability */
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.5); /* Start small */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: scale(1); /* End at original size */
+        opacity: 1; /* End visible */
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem; /* Add space below the title */
+    color: #ff4081; /* Title color */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #ff4081; /* Pink border on focus */
+    transition: border 0.3s ease-in-out;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #ff4081; /* Pink button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+}
+
+/* Error Message Style */
+.error-box {
+    color: #e91e63;
+    background-color: #ffebee;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #e91e63;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Success Message Style */
+.success-box {
+    color: #4caf50; /* Green text */
+    background-color: #e8f5e9; /* Light green background */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #4caf50; /* Green border */
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
